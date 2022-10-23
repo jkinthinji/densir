@@ -1,0 +1,18 @@
+from tkinter import *
+
+root=Tk()
+root.title('Densir Technologies')
+root.state("zoomed")
+root.configure(background="blue")
+#style
+maincanvas = Canvas(root, width=500, height=400)
+maincanvas.place(x=750, y=400, anchor=CENTER)
+
+username=Label(maincanvas, text='Enter username')
+Password=Label(maincanvas, text='Enter password')
+mobilenum=Label(maincanvas, text='Enter mobile')
+username.place(x=50, y=200)
+Password.place(x=50, y=170)
+mobilenum.place(x=50, y=150)
+
+root.mainloop()
